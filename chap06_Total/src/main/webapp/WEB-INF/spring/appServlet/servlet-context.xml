@@ -27,6 +27,7 @@
 	<bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
 		<property name="definitions">
 			<list>
+				<value>/WEB-INF/tiles/tile-config.xml</value>
 			</list>
 		</property>
 	</bean>	
@@ -45,6 +46,7 @@
 		<property name="dataSource" ref="ds"></property>
 		<property name="mapperLocations">
 			<list>
+				<value>/WEB-INF/maaper/*-mapper.xml</value>
 			</list>
 		</property>
 	</bean>

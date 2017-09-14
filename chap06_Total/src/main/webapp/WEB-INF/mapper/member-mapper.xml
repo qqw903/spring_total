@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+         
+<mapper namespace="join">
+	<insert id="add">
+		insert into member values(#{id}, #{pw}, #{em})
+	</insert>
+	<insert id="add2">
+		insert into detail(id) values(#{id})
+	</insert>
+	<select id="checkByIdmailandPass" resultType="java.util.HashMap">
+		select count(*) from member where (m_id=#{idemail} or m_em=#{idemail})
+			and m_pw=#{pass}
+	</select>
+	<select id="checkId" resultType="java.util.HashMap">
+		select * from member where m_id=#{id}
+	</select>
+	<select id="checkEmail" resultType="java.util.HashMap">
+		select * from member where m_em=#{email}
+	</select>
+</mapper>
