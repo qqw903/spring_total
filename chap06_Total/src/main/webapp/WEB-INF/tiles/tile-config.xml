@@ -10,6 +10,6 @@
 	
 
 	<definition extends="t_base" name="t_expr">
-		<put-attribute name="section" expression="/WEB-INF/views/member/${section}.jsp" />
+		<put-attribute name="section" expression="/WEB-INF/views/${section}.jsp" />
 	</definition>
 </tiles-definitions>
