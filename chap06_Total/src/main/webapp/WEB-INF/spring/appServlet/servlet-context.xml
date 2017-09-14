@@ -46,7 +46,7 @@
 		<property name="dataSource" ref="ds"></property>
 		<property name="mapperLocations">
 			<list>
-				<value>/WEB-INF/maaper/*-mapper.xml</value>
+				<value>/WEB-INF/mapper/*-mapper.xml</value>
 			</list>
 		</property>
 	</bean>
